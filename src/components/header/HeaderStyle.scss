@@ -1,0 +1,95 @@
+@use '../../assets/helpers/theme-variables' as v;
+
+.header {
+    .tndh-header-wrapper {
+        padding-inline: 0;
+        .logo {
+            @media only screen and (min-width: 300px) and (max-width: 419px) {
+                margin-block-end: 15px;
+            }
+            img {
+                margin-inline-end: 25px;
+            }
+            .logo-heading {
+                h4 {
+                    font-size: v.$font-size-h1;
+                    color: v.$primary;
+                    margin-block: 0;
+                }
+                span {
+                    font-size: v.$font-size-20;
+                    color: v.$text;
+                }
+            }
+        }
+        .tndh-navbar-wrapper {
+            nav {
+                @media only screen and (min-width: 300px) and (max-width: 419px) {
+                    margin-block-end: 30px;
+                }
+                a {
+                    position: relative;
+                    font-size: v.$font-size-22;
+                    color: v.$text;
+                    margin-inline-end: 30px;
+                    @media only screen and (min-width: 300px) and (max-width: 419px) {
+                        font-size: v.$font-size-16;
+                    }
+                    &.active {
+                        color: v.$primary;
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            bottom: -15px;
+                            right: 0;
+                            display: block;
+                            width: 24px;
+                            height: 4px;
+                            background-color: v.$primary;
+                            border-radius: 2px;
+                        }
+                    }
+                }
+            }
+        }
+        .tndh-header-action {
+            text-align: end;
+            .btn-login {
+                padding: 15px 30px;
+                background: #FAFCFC;
+                border-radius: 18px;
+                color: v.$theme-black;
+                @media only screen and (min-width: 300px) and (max-width: 419px) {
+                    font-size: v.$font-size-16;
+                    padding: 15px;
+                }
+                &:hover {
+                    background: v.$primary;
+                    color: v.$white;
+                }
+            }
+            .btn-signup {
+                padding: 15px 30px;
+                background: v.$primary;
+                border-radius: 18px;
+                margin-inline: 15px;
+                color: v.$white;
+                &:hover {
+                    background: v.$white;
+                    color: v.$primary;
+                }
+            }
+            .btn-lang {
+                padding: 15px 30px;
+                background: #FAFCFC;
+                border-radius: 18px;
+                color: v.$theme-black;
+                &:hover {
+                    background: v.$primary;
+                    color: v.$white;
+                }
+            }
+
+        }
+    }    
+}

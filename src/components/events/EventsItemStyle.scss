@@ -1,0 +1,126 @@
+@use '../../assets/helpers/theme-variables' as v;
+
+.tndh-events-wrapper {
+    .tndh-events-title {
+        font-size: v.$font-size-h1;
+        margin-block-end: 33px;
+    }
+    ul {
+        .tndh-events-item {
+            display: flex;
+            background-color: v.$blue-light;
+            padding: 15px;
+            border-radius: 18px;
+            margin-block-end: 28px;
+            @media only screen and (min-width: 300px) and (max-width: 419px) {
+                flex-wrap: wrap;
+            }
+            .tndh-events-item--media {
+                position: relative;
+                img {
+                    max-width: 350px;
+                }
+                .tndh-events-item--date {
+                    display: flex;
+                    flex-wrap: wrap;
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                    background-color: v.$primary;
+                    border-radius: 16px;
+                    padding: 20px 0;
+                    justify-content: center;
+                    text-align: center;
+                    span {
+                        display: block;
+                        width: 100%;
+                        color: v.$white;
+                        font-size: v.$font-size-h1;
+                        font-weight: 700;
+                        &:first-child {
+                            font-size: v.$font-size-16;
+                            margin-block-end: 10px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+            .tndh-events-item--content {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 30px;
+                .tndh-events-title {
+                    font-size: v.$font-size-h3;
+                }
+                .tndh-events-description {
+                    font-size: v.$font-size-20;
+                    color: v.$text;
+                    font-weight: 400;
+                }
+                .tndh-events-meta {
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    align-items: center;
+                    @media only screen and (min-width: 300px) and (max-width: 419px) {
+                        flex-direction: column;
+                    }
+                    .tndh-events-location {
+                        padding: 16px 15px;
+                        border: 1px solid #FFFFFF;
+                        border-radius: 16px;
+                        margin-inline-end: 15px;
+                        margin-block: 0;
+                        flex: 3;
+                        font-size: v.$font-size-16;
+                        color: v.$text;
+                        i {
+                            color: v.$text;
+                            font-size: v.$font-size-20;
+                            margin-inline-end: 10px;
+                            font-weight: 500;
+                        }
+                    }
+                    .tndh-events-time {
+                        padding: 16px 15px;
+                        border: 1px solid #FFFFFF;
+                        border-radius: 16px;
+                        margin-inline-end: 15px;
+                        margin-block: 0;
+                        flex: 1;
+                        font-size: v.$font-size-16;
+                        color: v.$text;
+                        i {
+                            color: v.$text;
+                            font-size: v.$font-size-20;
+                            margin-inline-end: 10px;
+                            font-weight: 500;
+                        }
+                    }
+                    .tndh-events-btn {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 10px 15px;
+                        border: 1px solid #FFFFFF;
+                        border-radius: 16px;
+                        width: 58px;
+                        height: 58px;
+                        font-size: v.$font-size-16;
+                        color: v.$text;
+                        i {
+                            color: v.$primary;
+                            font-size: v.$font-size-h3;
+                            font-weight: 500;
+                        }
+                    }
+                    p {
+                        @media only screen and (min-width: 300px) and (max-width: 419px) {
+                            margin-block: 15px;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+}

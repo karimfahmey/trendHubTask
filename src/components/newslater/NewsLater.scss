@@ -1,0 +1,49 @@
+@use '../../assets/helpers/theme-variables' as v;
+
+.news-later {
+    background-color: v.$blue-light;
+    padding: 50px 45px;
+    margin-block-start: 50px;
+    margin-block-end: 90px;
+    border-radius: 22px;
+    .tndh-hero-body {
+        h1 {
+            font-size: v.$font-size-h4;
+            margin-block-end: 20px;
+        }
+        p {
+            font-size: v.$font-size-h4;
+            color: v.$text;
+            padding-inline-end: 100px;
+            @media only screen and (min-width: 300px) and (max-width: 419px) {
+                padding-inline-end: 0px;
+            } 
+        }
+    }
+    .tndh-news-later-form {
+        form {
+            background: v.$white;
+            border-radius: 14px;
+            overflow: hidden;
+            .input-group {
+                align-items: center;
+                input {
+                    padding: 15px 20px;
+                    background: transparent;
+                    border: 0;
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+            }
+            button {
+                padding: 15px 40px;
+                background: v.$primary;
+                border: 0;
+                color: v.$white;
+                border-radius: 14px;
+                font-weight: 500;
+            }
+        }
+    }
+}

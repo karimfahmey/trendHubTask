@@ -1,0 +1,23 @@
+@mixin transition-ease-out {
+  o-transition: all 0.15s ease-out;
+  -ms-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+@mixin transition-ease-out-4 {
+  o-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+@mixin transition-ease-out-7 {
+  o-transition: all 0.7s ease-out;
+  -ms-transition: all 0.7s ease-out;
+  -moz-transition: all 0.7s ease-out;
+  -webkit-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
+}

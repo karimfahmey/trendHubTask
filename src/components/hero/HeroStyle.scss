@@ -1,0 +1,47 @@
+@use '../../assets/helpers/theme-variables' as v;
+
+.tndh-hero-wrapper {
+    padding: 50px 45px;
+    margin-block-start: 50px;
+    background-color: v.$white;
+    border-radius: 22px;
+    .tndh-hero-body {
+        h1 {
+            margin-block-end: 40px;
+        }
+        p {
+            font-size: v.$font-size-h4;
+            color: v.$text;
+            padding-inline-end: 100px;
+            @media only screen and (min-width: 300px) and (max-width: 419px) {
+                padding-inline-end: 0px;
+            } 
+        }
+    }
+    .tndh-hero-serach {
+        width: 40%;
+        margin-block-start: 66px;
+        @media only screen and (min-width: 300px) and (max-width: 419px) {
+            width: 100%;
+            margin-block-end: 30px;
+        } 
+        form {
+            .input-group {
+                background-color: #F4F7F9;
+                border-radius: 49px;
+                padding: 15px;
+                .input-group-text {
+                    background: transparent;
+                    border: 0;
+                }
+                input {
+                    background: transparent;
+                    border: 0;
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+}

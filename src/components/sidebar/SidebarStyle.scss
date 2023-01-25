@@ -1,0 +1,34 @@
+@use '../../assets/helpers/theme-variables' as v;
+
+.sidebar {
+    .sidebar-content {
+        .sidebar-title {
+            h4 {
+                font-size: v.$font-size-h4;
+                margin-block-end: 29px;
+                font-weight: 600;
+            }
+        }
+        .download-title {
+            margin-block-start: 52px;
+            margin-block-end: 30px;
+            h4 {
+                font-size: v.$font-size-h4;
+                font-weight: 600;
+            }
+            p {
+                font-size: v.$font-size-20;
+                color: v.$text;
+                padding-inline-end: 20%;
+            }
+        }
+        .download-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            a {
+                padding-inline-end: 15px;
+            }
+        }
+    }
+}

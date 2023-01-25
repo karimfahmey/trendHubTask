@@ -1,0 +1,56 @@
+@use '../../assets/helpers/theme-variables' as v;
+
+.footer-wrapper {
+    background: #FFF;
+    padding: 30px 0;
+    .logo {
+        @media only screen and (min-width: 300px) and (max-width: 419px) {
+            margin-block-end: 15px;
+        }
+        img {
+            margin-inline-end: 25px;
+        }
+        .logo-heading {
+            h4 {
+                font-size: v.$font-size-h1;
+                color: v.$primary;
+                margin-block: 0;
+            }
+            span {
+                font-size: v.$font-size-20;
+                color: v.$text;
+            }
+        }
+    }
+    .nav {
+        @media only screen and (min-width: 300px) and (max-width: 419px) {
+            margin-block-end: 15px;
+        }
+        .nav-item {
+            padding-inline: 15px;
+            a {
+                color: v.$primary;
+                font-size: v.$font-size-20;
+                @media only screen and (min-width: 300px) and (max-width: 419px) {
+                    font-size: v.$font-size-14;
+                }
+                &:hover {
+                    color: v.$theme-black;
+                }
+            }
+        }
+    }
+    .social-links {
+        display: flex;
+        align-items: center;
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 72px;
+            height: 72px;
+            border-radius: 14px;
+            margin-inline-end: 20px;
+        }
+    }
+}
